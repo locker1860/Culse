@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <div style="clear:both"></div>
+        <header>
+            <div class="login"> <span>sign in as Member</span> <span> sign out</span></div>
+            <div class="logo">Cruise</div>
+        </header>
+        <div class="wrapper">
+            <nav>
+                <div>DASHBOARD</div>
+                <div>MY CRUISE</div>
+                <div class="active">AGENTS</div>
+                <div>HELP</div>
+            </nav>
+            <div style="clear:both"></div>
+            <div class="main-body">
+                <div class="subnav">
+                    <div id="tab">Agents</div>
+                    <div class="button">All</div>
+                    <div class="button active">Physical</div>
+                    <div class="button">Virtual</div>
+                </div>
+                <div class="main-content">
+                    <div class="details">
+                        
+                    </div>
+                    <div class="side">
+                        <div class="summary">
+                            <div class="side-header">Summary</div>
+                            <div class="summary-detail">
+                                <div class="tags"><div>idle</div><div>building</div></div>
+                                <div class="counts"><div id="idle-count"></div><div id="building-count"></div></div>
+                            </div>
+                        </div>
+                        <div class="history">
+                            <div class="side-header">History</div>
+                            <div class="history-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="addResourceModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modalInputDiv">
+                <p>Separate multiple resource name with commas</p>
+                <input type="text" id="addResourceInput" placeholder="e.g.  Chrome,Firefox">
+            </div>
+            <div class="modalButtons">
+                <div role="button" id="modalAddResource">Add Resources</div>
+                <div role="button" id="modalCancel">Cancel</div>
+            </div>
+    
+        </div>
+    
+    </div>
+<script src="dist/js/app.js"></script>
+</body>
+</html>
